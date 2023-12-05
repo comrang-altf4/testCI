@@ -35,6 +35,6 @@ jobs:
       - name: Run tests
         run: |
           ls
-          python -c "import os; assert 1==0,os.getcwd()"
+          python -c "import os; assert 1==0,os.listdir()"
           python manage.py test
 
