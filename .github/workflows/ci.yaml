@@ -32,11 +32,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install Django
 
-      - name: Set up Django
-        run: |
-          python manage.py migrate
-          python manage.py collectstatic --noinput
-      
       - name: Run tests
         run: |
           python ./simpleApp/manage.py test
