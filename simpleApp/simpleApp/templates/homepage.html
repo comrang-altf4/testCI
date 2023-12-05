@@ -1,0 +1,13 @@
+<!-- pages/templates/pages/home.html -->
+<!-- create textbox and submit button-->
+<form action="/polls/" method="post"> 
+    {% csrf_token %}
+    <input type="text" name="question" id="question" />
+    <input type="submit" value="Submit" />
+</form>
+<h1>Results</h1>
+<ul>
+{% for question in questions %}
+    <li>{{ question}}</li>
+{% endfor %}
+</ul>
