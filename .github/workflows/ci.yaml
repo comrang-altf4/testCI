@@ -34,5 +34,5 @@ jobs:
 
       - name: Run tests
         run: |
-          python ./simpleApp/manage.py test
+          python simpleApp/manage.py test
 
